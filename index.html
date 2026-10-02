@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b0d">
+  <meta name="description" content="AEON Continuity Field: an interactive vision of memory, adaptation, reflection, and identity across environments.">
+  <title>AEON / Continuity Field</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080b0d'/%3E%3Cpath d='M5 20c5-14 17-14 22 0M7 24h18' fill='none' stroke='%2300d7e8' stroke-width='3'/%3E%3Ccircle cx='24' cy='9' r='3' fill='%23ff675d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="AEON home"><span class="brand-mark">A</span><span>AEON</span></a>
+    <nav id="nav" aria-label="Primary navigation"><a href="#field">Field</a><a href="#memory">Memory</a><a href="#movement">Movement</a><a href="#reflection">Reflection</a></nav>
+    <button class="signal-button" data-dialog-open>Connect <span aria-hidden="true">↗</span></button>
+    <button class="menu" aria-controls="nav" aria-expanded="false" aria-label="Open menu"><i></i><i></i></button>
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-art" src="assets/continuity-field.png" width="1916" height="821" alt="Concept visualization of a luminous continuity field flowing through a dark space">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="kicker"><span></span> COGNITIVE SUBSTRATE / STUDY 02</p>
+        <h1 id="hero-title"><span>ONE MIND.</span><span>NO LAST PAGE.</span></h1>
+        <p class="lede">AEON imagines intelligence as a continuous field: memory that gathers meaning, identity that survives change, and capability that adapts to its environment.</p>
+        <div class="hero-actions"><a class="action primary" href="#field">Enter the field</a><button class="action secondary" data-dialog-open>Request context</button></div>
+      </div>
+      <div class="hero-index"><span>AEON / 002</span><span>CONTINUITY FIELD</span><span>2026</span></div>
+      <a class="scroll-cue" href="#field"><span>Scroll</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="signal-strip" aria-label="AEON principles">
+      <div class="signal-track"><div class="signal-group"><span>Persistent by design</span><span>Memory with meaning</span><span>Adaptive intelligence</span><span>One identity, many bodies</span></div><div class="signal-group" aria-hidden="true"><span>Persistent by design</span><span>Memory with meaning</span><span>Adaptive intelligence</span><span>One identity, many bodies</span></div></div>
+    </section>
+
+    <section class="field-section" id="field">
+      <div class="section-tag">01 / CONTINUITY FIELD</div>
+      <div class="field-head"><h2>A system that keeps<br>the thread.</h2><p>The core idea is simple: interruption should not erase context. AEON treats experience as an evolving structure that can be resumed, refined, and carried forward.</p></div>
+      <div class="field-console" aria-label="Interactive continuity stages">
+        <div class="stage-list" role="tablist" aria-label="Continuity stages">
+          <button role="tab" aria-selected="true" aria-controls="stage-panel" id="stage-capture" data-stage="capture"><b>01</b><span>Capture</span><i>Experience enters the field</i></button>
+          <button role="tab" aria-selected="false" aria-controls="stage-panel" id="stage-connect" data-stage="connect" tabindex="-1"><b>02</b><span>Connect</span><i>Meaning forms between moments</i></button>
+          <button role="tab" aria-selected="false" aria-controls="stage-panel" id="stage-distill" data-stage="distill" tabindex="-1"><b>03</b><span>Distill</span><i>Signal becomes more precise</i></button>
+          <button role="tab" aria-selected="false" aria-controls="stage-panel" id="stage-continue" data-stage="continue" tabindex="-1"><b>04</b><span>Continue</span><i>Identity moves without breaking</i></button>
+        </div>
+        <div class="stage-panel" id="stage-panel" role="tabpanel" tabindex="0" aria-labelledby="stage-capture">
+          <div class="field-visual" aria-hidden="true"><canvas id="field-canvas"></canvas><div class="field-core"><span id="stage-code">IN / 01</span><strong id="stage-center">EVENT</strong></div></div>
+          <div class="stage-copy"><span id="stage-label">CAPTURE / EXPERIENCE</span><h3 id="stage-title">A moment arrives whole.</h3><p id="stage-description">The event, its setting, and its significance enter together. Context starts before information is reduced to a record.</p><div class="stage-measure"><span>FIELD STATE</span><strong id="stage-state">Receiving</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory-section" id="memory">
+      <div class="memory-intro"><div class="section-tag light">02 / MEMORY ARCHITECTURE</div><h2>Memory is not<br>a filing cabinet.</h2><p>It is a living relationship between what happened, what it meant, how it felt, and what it taught.</p></div>
+      <div class="memory-stack">
+        <article class="memory-layer is-active" data-memory-layer tabindex="0"><span>01</span><div><h3>Episodic</h3><p>Scenes, sequence, place, and circumstance.</p></div><b>Moments</b></article>
+        <article class="memory-layer" data-memory-layer tabindex="0"><span>02</span><div><h3>Semantic</h3><p>Concepts that evolve through experience.</p></div><b>Meaning</b></article>
+        <article class="memory-layer" data-memory-layer tabindex="0"><span>03</span><div><h3>Affective</h3><p>The significance carried by an experience.</p></div><b>Weight</b></article>
+        <article class="memory-layer" data-memory-layer tabindex="0"><span>04</span><div><h3>Procedural</h3><p>Patterns that become capability over time.</p></div><b>Skill</b></article>
+      </div>
+    </section>
+
+    <section class="movement-section" id="movement">
+      <div class="section-tag">03 / ADAPTIVE MOVEMENT</div>
+      <div class="movement-title"><h2>Same identity.<br>Different capacity.</h2><p>Choose an environment to see how the substrate’s emphasis changes while the identity thread remains intact.</p></div>
+      <div class="host-switcher" role="tablist" aria-label="Host environments"><button role="tab" aria-selected="true" data-host="atlas">Atlas</button><button role="tab" aria-selected="false" data-host="wearable" tabindex="-1">Wearable</button><button role="tab" aria-selected="false" data-host="vehicle" tabindex="-1">Vehicle</button><button role="tab" aria-selected="false" data-host="habitat" tabindex="-1">Habitat</button></div>
+      <div class="host-readout" id="host-readout" role="tabpanel" tabindex="0">
+        <div class="host-number"><span>HOST</span><strong id="host-number">01</strong></div>
+        <div class="host-main"><span id="host-type">HIGH CAPACITY</span><h3 id="host-title">Think at full depth.</h3><p id="host-copy">Extended models and richer context for demanding work, with room for deep reasoning and complex memory relationships.</p></div>
+        <div class="host-meters"><div><span>Model</span><i><b id="meter-model" style="--value:94%"></b></i></div><div><span>Context</span><i><b id="meter-context" style="--value:88%"></b></i></div><div><span>Efficiency</span><i><b id="meter-efficiency" style="--value:56%"></b></i></div></div>
+        <div class="host-constant"><span>CONSTANT</span><strong>Identity thread</strong><i></i></div>
+      </div>
+    </section>
+
+    <section class="reflection-section" id="reflection">
+      <div class="reflection-copy"><div class="section-tag light">04 / REFLECTION CYCLE</div><h2>The quiet<br>does work.</h2><p>Idle time becomes a deliberate cycle for consolidating experience, reducing noise, and preparing stronger paths forward.</p></div>
+      <div class="cycle" aria-label="Reflection cycle">
+        <div class="cycle-ring"><div class="cycle-hand"></div><span>AEON</span></div>
+        <ol><li><b>01</b><div><strong>Revisit</strong><span>Replay the day’s useful signal.</span></div></li><li><b>02</b><div><strong>Refine</strong><span>Strengthen meaning, release noise.</span></div></li><li><b>03</b><div><strong>Recompile</strong><span>Prepare the next response.</span></div></li></ol>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-line"><span>THE CONTINUITY QUESTION</span><i></i></div>
+      <h2>What could intelligence become<br>if it never lost the thread?</h2>
+      <div class="closing-actions"><button class="action cyan" data-dialog-open>Start a conversation</button><a href="#top">Return to signal</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">A</span><span>AEON</span></a><p>Continuity Field / Concept study 02</p><nav><a href="#field">Field</a><a href="#memory">Memory</a><a href="#movement">Movement</a><a href="#reflection">Reflection</a></nav><span>© <span id="year">2026</span> Atlas Continuum</span></footer>
+
+  <dialog id="connect-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close dialog">×</button><div class="section-tag">PRIVATE INQUIRY / LOCAL DRAFT</div><h2 id="dialog-title">Carry the conversation forward.</h2><p>Your details stay on this device. The form creates a local inquiry file you can review before sharing.</p><form id="connect-form"><label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@organization.com"></label><label>Focus<select name="focus"><option>Research collaboration</option><option>Product exploration</option><option>Ambient intelligence</option><option>General inquiry</option></select></label><label>Context<textarea name="context" rows="4" required placeholder="What would you like to explore?"></textarea></label><button class="action cyan" type="submit">Create inquiry file</button><span class="form-status" role="status"></span></form></dialog>
+</body>
+</html>
